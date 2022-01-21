@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    /* first class */
+/* *********************************** */
+.first{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(0,0,0,0.2)50%,rgb(0,0,0,0.2)50%), url(../img/contact/2.jpg) ;    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lg img{
+    width: 100px;
+}
+.logo > span{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+}
+.menu{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    gap: 8%;
+    list-style: none;
+}
+.nav-links li {
+    height: 100px;
+}
+.nav-links a{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'poppins';
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+.menu #home a{
+    color: #ff7200;
+}
+.nav-links li a:hover{
+    transform: translateY(-3px);
+    color: #ff7200;
+}
+
+.toggle{
+    display: none;
+}
+.bigtitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding-left: 40px;
+    gap: 20px;
+}
+.title{
+    font-family: 'poppins';
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+.btn{
+    width: 11%;
+    height: 8%;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.btn button {
+    width: 100%;
+    height: 100%;
+    background: #ff7200;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn button:hover{
+    color: white;
+}
+
+/* end first class */
+/* *********************************** */
+    /* contact class */
+/* *********************************** */
+
+.contact-box{
+	width: 98%;
+    flex-grow: 1;
+    margin: auto;
+    padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    margin-bottom: 20px;
+}
+.left{
+	/* background: url("../img/contact/1.jpg") no-repeat center; */
+	background-size: cover;
+	height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+.left h2{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1.875rem;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.left p{
+    font-family: 'poppins';
+    font-weight: 600;
+    color: #d8d6d6;
+    font-size: 1.2rem;
+}
+.right{
+	padding: 25px 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#message{
+    height: 130px;
+}
+
+.butn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.butn:hover{
+    background-color: #27ae60;
+}
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+
+   /* footer class */
+/* *********************************** */
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #064663;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0px 10px 0px;
+}
+.fo-row1{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fo-col{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fo-cont{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+.fo-cont Strong{
+    font-family: 'poppins';
+    font-size: 1rem;
+    color: #fff;
+}
+.h-line{
+    width: 90%;
+    height: 1.5px;
+    background: #fff;
+}
+.fo-cont p{
+    color: #fff;
+}
+.social{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.social a{
+    color: #fff;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+	transition: all 0.5s ease-in-out;
+}
+.social a:hover{
+    transform: translateY(-3px);
+}
+.fo-ul{
+    width: 100%;
+    height: 60%;
+    list-style: none;
+}
+.fo-ul ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fo-ul ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fo-ul ul li a{
+    text-decoration: none;
+    color: #fff;
+	transition: all 0.2s ease;
+}
+.fo-ul ul li a:hover{
+    padding-left: 8px;
+    color: #9A0680;
+}
+.copy{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+.copy h2{
+    font-family: 'poppins';
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* responisve */
+/* ****************************** */
+@media(max-width:768px){
+    /* first class */
+/* *********************************** */
+    .title{
+        font-size: 2rem;
+    }
+    .btn{
+        width: 14%;
+        height: 9%;
+    }
+    .second-title{
+        font-size: 2rem;
+    }
+    .small{
+        font-size: 2rem;
+    }
+    /* end first class */
+/* *********************************** */
+
+
+
+    /* footer class */
+/* *********************************** */
+    .footer{
+        height: auto;
+    }
+    .fo-cont p{
+        font-size: 0.9rem;
+    }
+    .social{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media(max-width:426px){
+    /* first class */
+/* *********************************** */
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px 20px 0px;
+        
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        display: none;
+        background-color: rebeccapurple;
+        z-index: 1;
+        height: 92vh;
+    }
+    .nav-links li{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 100%;
+    }
+    .nav-links.show{
+        display: flex;
+    }
+    .nav-links a{
+        font-size: 1.3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        color: white;
+    }
+    .logo{
+        width: 30%;
+    }
+    .lg img{
+        width: 70px;
+    }
+    .logo > span{
+        font-size: 1rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .btn{
+        width: 28%;
+        height: 12%;
+    }
+    /* end first class */
+/* *********************************** */
+    /* Contact bow  */
+/* *********************************** */
+
+    .contact-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer */
+/* *********************************** */
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.fo-row1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.fo-col{
+    width: 100%;
+}
+
+}
+
+
+@media(max-width:414px){
+    /* first class */
+/* *********************************** */
+    .title{
+        font-size: 1rem;
+    }
+    .btn{
+        width: 34%;
+        height: 6%;
+    }
+    /* end first class */
+/* *********************************** */
+}

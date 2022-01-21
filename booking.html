@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/booking.css"> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="navbar">
+                <div class="logo">
+                    <div class="lg">
+                        <img src="img/logo4.png" alt="">
+                    </div>
+                    <span>Rent Me Now</span>
+                </div>
+                <div class="toggle" id="burger"><i class="fas fa-bars" style="font-size:40px"></i></div>
+                <div class="menu">
+                    <ul class="nav-links" id="navLinks">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li id="home"><a href="booking.html">Booking</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bigtitle">
+                <div class="title">
+                    <span>Fast & Easy Way <br>To Rent A Car</span>
+                </div>
+                <div class="btn">
+                    <a href="#">
+                        <button>Get Statred</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <form name="form1" class="form" id="form1">
+                <div class="form-title">
+                    <h1>Rent Your Car Now</h1>
+                </div>
+                <div class="row-back">
+                    <div class="form-row">
+                        <h3>Select Type Of Car :</h3>
+                        <select name="car" class="form-select" id="car">
+                            <option value="" selected disabled>select car type</option>
+                            <option value="Moto">Moto</option>
+                            <option value="citadine" class="manue">Citadine</option>
+                            <option value="Compact" class="manue">Compact</option>
+                            <option value="Berline" class="auto">Berline</option>
+                            <option value="Utilitaire" class="manue">Utilitaire</option>
+                            <option value="Engin de Chantier" class="manue">Engin de Chantier</option>
+                            <option value="Camion" class="auto">Camion</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <h3>Select Type Of Fuel :</h3>
+                        <select name="fuel" class="form-select" id="Fuel" disabled>
+                            <option value="">please select type of car first </option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <h3>Select Gear Box :</h3>
+                        <select name="Gear-box" class="form-select" id="Gear-box" disabled>
+                            <option value="">please select type of fuel first</option> 
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <h3>Number Of Days :</h3>
+                        <input class="form-select" type="number" name="DaysNumber" id="DaysNumber" min="1" value="1">
+                    </div>
+                    <div id="bot" >
+                        <input type="button" value="Book Now" class="btn2" onclick="calculator()">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="fo-row1">
+                <div class="fo-col">
+                    <div class="fo-cont" >
+                        <strong>Rent Me Now</strong>
+                        <div class="h-line"></div>
+                        <p>Rent A Car With Hire Fire We Have Thousands Of Car Rental Locations All Over Morocco And The World. Every Vehicle Is Disinfected After Renting</p>
+                        <div class="social">
+                            <a href="https://2u.pw/xX5YK" target="_alert"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://2u.pw/8hQ2t" target="_alert"><i class="fab fa-twitter"></i></a>
+                            <a href="https://2u.pw/Bt7e7" target="_alert"><i class="fab fa-instagram"></i></a>
+                            <a href="https://2u.pw/xX5YK" target="_alert"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fo-col">
+                    <div class="fo-cont" >
+                        <strong>Company</strong>
+                        <div class="h-line"></div>
+                        <div class="fo-ul">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="fo-col">
+                    <div class="fo-cont">
+                        <strong>Get Help</strong>
+                        <div class="h-line"></div>
+                        <div class="fo-ul">
+                            <ul>
+                                <li><a href="#">F&Q</a></li>
+                                <li><a href="#">Order Option</a></li>
+                                <li><a href="#">Payment Options</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fo-col">
+                    <div class="fo-cont">
+                        <strong>My Account</strong>
+                        <div class="h-line"></div>
+                        <div class="fo-ul">
+                            <ul>
+                                <li><a href="#">Sign In/Register</a></li>
+                                <li><a href="#">My Wichlist</a></li>
+                                <li><a href="#">My Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <h2> &copy; 2021 Rent Me Now All Rights Reserved</h2>
+            </div>
+        </div>
+    </div>
+    <script src="js/booking.js"></script> 
+</body> 
+</html> 
