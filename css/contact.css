@@ -380,7 +380,7 @@
         width: 100%;
         padding: 0;
         display: none;
-        background-color: rebeccapurple;
+        background-color: #000;
         z-index: 1;
         height: 92vh;
     }
@@ -403,7 +403,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30%;
+        width: 20%;
         color: white;
     }
     .logo{
